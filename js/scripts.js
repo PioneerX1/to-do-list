@@ -28,5 +28,13 @@ $(document).ready(function() {
       $("#output-description").text(newTask.taskDescription);
       $("#output-date").text(newTask.taskDate);
     });
+
+    $("button#remove-task").click(function() {
+      //$("ul#tasks").children("li").first().click(function() {
+        //$("ul#tasks").children("li").last().click().remove();
+        $(".task").last().click().remove();
+        //$("#task-info").hide();
+      //});
+    });
   });
 });
