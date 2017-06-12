@@ -5,3 +5,7 @@
 #task-list {
   display: none;
 }
+
+.deleted {
+  background-color: red;
+}

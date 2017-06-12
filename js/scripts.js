@@ -16,25 +16,31 @@ $(document).ready(function() {
     var newTask = new Task(inputTaskName,inputTaskDescription,inputTaskDate);
 
     $("#task-list").show();
-    $("ul#tasks").append("<li><span class='task'>" + newTask.taskName + "</span></li>");
+    $("ul#tasks").append("<li><span class='task'>" + newTask.taskName + "</span>" + "   " + "<span class='remove-button'>Remove</span>" + "</li>");
 
     $("#task-name").val("");
     $("#task-description").val("");
     $("#task-date").val("");
 
     $(".task").last().click(function() {
+      //var lastClicked = $("li").this();
+
       $("#task-info").show();
       $("#task-info h3").text(newTask.taskName);
       $("#output-description").text(newTask.taskDescription);
       $("#output-date").text(newTask.taskDate);
+
+
     });
 
-    $("button#remove-task").click(function() {
-      //$("ul#tasks").children("li").first().click(function() {
-        //$("ul#tasks").children("li").last().click().remove();
-        $(".task").last().click().remove();
-        //$("#task-info").hide();
-      //});
+    $(".remove-button").last().click(function() {
+      $(this).prev().addClass("deleted");
+      //lastClicked.remove();
+      $("#task-info").hide();
     });
+
+
+
+
   });
 });
