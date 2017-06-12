@@ -10,7 +10,12 @@ function Task(taskName, taskDescription, taskDate) {
 $(document).ready(function() {
   $("form#task-form").submit(function(event) {
     event.preventDefault();
-    alert('js called');
+    var inputTaskName = $("input#task-name").val();
+    var inputTaskDescription = $("input#task-description").val();
+    var inputTaskDate = $("input#task-date").val();
+    var newTask = new Task(inputTaskName,inputTaskDescription,inputTaskDate);
+
+    $("ul#tasks").append("<li><span class='task'>" + newTask.taskName + "</span></li>");
 
   });
 });
