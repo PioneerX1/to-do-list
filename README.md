@@ -1,12 +1,26 @@
-# _{Application Name}_
+# _To Do List_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Keeps a List of Items to be Completed, June 12, 2017_
 
-#### By _**{List of contributors}**_
+#### By _**Mick Sexton**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_The user submits tasks in the To Do List that need to be completed. Users can then click on an individual list item to see more instructions on the task, and to remove an item from the list and mark it as completed.
+
+Additional Nice To Have Functionality: User must put their name to show they have completed it, then add this entry to another list of completed tasks with user's name or initials to sign off that they completed it_
+
+## Requirements
+
+* _Must take input of task name, description, when it must be completed_
+* _Must list task name as part of a list of tasks_
+* _When user clicks on the task in list, must show further info_
+* _On further info pane, must give option to mark task as completed and remove_
+
+* _Examples:_
+* _User adds clean the tub_
+* _Adds to list, when clicked on, "clean the tub" shows:_
+* _Clean the Tub / Use scrub bubbles soap with warm water / Finish by Thursday / (button for TASK COMPLETE)_
 
 ## Setup/Installation Requirements
 
@@ -34,4 +48,4 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-Copyright (c) 2017 **_{List of contributors or company name}_**
+Copyright (c) 2017 **_Mick Sexton_**
