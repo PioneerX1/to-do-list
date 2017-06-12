@@ -10,25 +10,37 @@
   <body>
     <div class="container">
       <h1>To Do List</h1>
-        <p>Enter a Task Below to your To Do List. You can also remove the task by clicking on the list entry.</p>
+      <p>Enter a Task Below to your To Do List. You can also remove the task by clicking on the list entry.</p>
 
-        <form id="task-form">
-          <div class="form-group">
-            <label for="task-name">Task Name: </label>
-            <input type="text" class="form-control" id="task-name">
-          </div>
-          <div class="form-group">
-            <label for="task-description">Description: </label>
-            <input type="text" class="form-control" id="task-description">
-          </div>
-          <div class="form-group">
-            <label for="task-name">Date to Complete by: </label>
-            <input type="text" class="form-control" id="task-name">
-          </div>
-          <button type="submit" class="btn">Submit Task</button>
-        </form>
+      <form id="task-form">
+        <div class="form-group">
+          <label for="task-name">Task Name: </label>
+          <input type="text" class="form-control" id="task-name">
+        </div>
+        <div class="form-group">
+          <label for="task-description">Description: </label>
+          <input type="text" class="form-control" id="task-description">
+        </div>
+        <div class="form-group">
+          <label for="task-name">Date to Complete by: </label>
+          <input type="text" class="form-control" id="task-name">
+        </div>
+        <button type="submit" class="btn">Submit Task</button>
+      </form>
 
-
+      <div class="row">
+        <div id="task-list" class="col-xs-6">
+          <h3>My Task List</h3>
+          <ul id="tasks">
+          </ul>
+        </div>
+        <div id="task-info" class="col-xs-6">
+          <h3></h3>
+          <p><span class="entry" id="output-description"></span></p>
+          <p><span class="entry" id="output-date"</span></p>
+          <button type="submit" class="btn">Task Complete/Remove</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -8,6 +8,9 @@ function Task(taskName, taskDescription, taskDate) {
 
 // USER INTERFACE LOGIC
 $(document).ready(function() {
-  $()
+  $("form#task-form").submit(function(event) {
+    event.preventDefault();
+    alert('js called');
 
+  });
 });
